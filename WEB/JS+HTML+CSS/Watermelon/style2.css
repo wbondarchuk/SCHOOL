@@ -1,0 +1,187 @@
+.figure { 
+position:absolute; 
+top:80px; 
+left:120px; 
+width: 100px; 
+height: 100px; 
+background-color: #9D33F0; 
+animation-name: spin; 
+animation-duration: 3s; 
+animation-iteration-count: infinite; 
+} 
+
+@keyframes spin { 
+0%{ 
+transform: rotate(0deg); 
+border-radius: 0% 0% 0% 0%; 
+} 
+35%{ 
+background-color: #33F09D; 
+border-radius: 50% 0% 0% 0%; 
+} 
+50% 
+{ 
+background-color: #F0EF33; 
+border-radius: 50% 50% 0% 0%; 
+} 
+75%{ 
+background-color: #F0EF33; 
+border-radius: 50% 50% 50% 0%; 
+} 
+100%{ 
+transform: rotate(360deg); 
+background-color:#F598C9; 
+border-radius: 50% 50% 50% 50%; 
+
+} 
+}
+
+
+.watermelon { 
+position: relative; 
+top:80px;
+left: 430px; 
+width: 400px; 
+height: 180px; 
+background: linear-gradient(0deg,#2C6124,#179245,#3CB42D,#CFF060);
+border-radius: 0% 0% 200px 200px;
+} 
+
+.red{ 
+position: absolute; 
+width: 350px; 
+height: 155px; 
+left: 25px; 
+background: linear-gradient(0deg,#FF4D4D,#F0608B,#F07560,#F69DB2);
+border-radius: 0% 0% 230px 230px; 
+}
+
+
+.seed1{	
+  position: absolute; 
+  width: 10px;
+  height: 17px;
+  background-color: black;
+  border-radius: 60% 60% 60% 60%;
+  transform: rotate(30deg); 
+  left: 25px;
+  top: 15px; 
+}
+
+.seed2{
+  position: absolute; 
+  width: 10px;
+  height: 17px;
+  background-color: black;
+  border-radius: 60% 60% 60% 60%;
+  transform: rotate(23deg); 
+  left: 81px;
+  top: 76px; 
+}
+.seed3{
+  position: absolute; 
+  width: 10px;
+  height: 17px;
+  background-color: black;
+  border-radius: 60% 60% 60% 60%;
+  transform: rotate(0deg); 
+  left: 165px;
+  top: 110px; 
+}
+
+
+.seed4{
+  position: absolute; 
+  width: 10px;
+  height: 17px;
+  background-color: black;
+  border-radius: 60% 60% 60% 60%;
+  transform: rotate(-30deg); 
+  left: 260px;
+  top: 76px;}
+
+.seed5{
+  position: absolute; 
+  width: 10px;
+  height: 17px;
+  background-color: black;
+  border-radius: 60% 60% 60% 60%;
+  transform: rotate(-23deg); 
+  left: 300px;
+  top: 15px; }
+
+.seed6{
+  animation-name: big;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  position: absolute; 
+  width: 10px;
+  height: 17px;
+  background-color: black;
+  border-radius: 60% 60% 60% 60%;
+  transform: rotate(0deg); 
+  left: 165px;
+  top: 30px;}
+
+
+.wow {
+	animation-name: appear;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  position: absolute; 
+  width: 50px;
+  height: 42px;
+  background-color: #FC4F5C;
+  border-radius: 50% 50% 0% 50%;
+  transform: rotate(13deg); 
+  left: 15px;
+  top: -60px;
+  box-shadow: inset 20px 0 30px rgba(0,0,0,0.2);
+}
+
+.wow2 {
+	animation-name: appear;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  position: absolute; 
+  width: 40px;
+  height: 52px;
+  background-color: #FC4F5C;
+  border-radius: 50% 50% 8% 50%;
+  transform: rotate(25deg); 
+  left: 175px;
+  top: -73px;
+  box-shadow: inset 20px 0 30px rgba(0,0,0,0.2);
+}
+.wow3 {
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  position: absolute; 
+  width: 50px;
+  height: 42px;
+  background-color: #FC4F5C;
+  border-radius: 60% 60% 0% 60%;
+  transform: rotate(88deg); 
+  left: 330px;
+  top: -60px;
+  box-shadow: inset 20px 0 30px rgba(0,0,0,0.2);
+}
+
+@keyframes appear {
+	0%{
+    opacity: 0;
+	}
+	100%
+	{
+	opacity: 100;
+	}
+}
+
+
