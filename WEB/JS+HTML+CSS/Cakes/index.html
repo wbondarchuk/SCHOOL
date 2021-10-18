@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson2</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="style.css">
+   <script src="script.js" defer></script>
+
+			<h2>Каталог выбора тортов и начинок</h2>
+
+		            <h3>Выберите тип торта</h3>
+                    <div class="caketype" >
+        			<select id="torttype"class= "cake" >
+        				<option  id="tort0" class="cake" value="600"> Муссовый торт </option>
+        				<option  id="tort1" class="cake" value="400"> Бисквитный торт</option>
+        				<option  id="tort2" class="cake" value="550"> Вафельный торт</option>
+        				<option  id="tort3" class="cake" value="350"> Творожный торт</option>
+        			</select>
+                    </div>
+                    
+                    <h3>Выберите размер торта</h3>
+                    <div class="cakesize" >
+                    <select id="tortsize"class= "cake" >
+                        <option  id="tort4" class="cake" value="200"> Одноярусный</option>
+                        <option  id="tort5" class="cake" value="500"> Двухъярусный</option>
+                        <option  id="tort6" class="cake" value="800"> Трехъярусный</option>
+                    </select>
+                    </div>
+
+                    <h3>Выберите форму торта</h3>
+                    <div class="cakeform" >
+                    <select id="tortform"class= "cake" >
+                        <option  id="tort7" class="cake" value="100"> Круглый</option>
+                        <option  id="tort8" class="cake" value="200"> Овальный</option>
+                        <option  id="tort9" class="cake"  value="300"> Треугольный</option>
+                        <option  id="tort10" class="cake" value="400"> Квадратный</option>
+                    </select>
+                    </div>
+
+                    <h3>Выберите начинку торта</h3>
+                    <input id="cont0" type="checkbox"class="cake" cost="500">
+                    <label>Ореховый шейк</label>
+
+                    <input id="cont1" type="checkbox"class="cake" cost="1200">
+                    <label>Клубника со сливками</label>
+
+                    <input id="cont2" type="checkbox"class="cake" cost="3400">
+                    <label>Бельгиский шоколад</label>
+
+                     <input id="cont3" type="checkbox"class="cake" cost="2300">
+                    <label>Фруктовый микс</label>
+
+                     <input id="cont4" type="checkbox"class="cake" cost="900">
+                    <label>Солёная карамель</label>
+
+                     <input id="cont5" type="checkbox"class="cake" cost="1000">
+                    <label>Сырный крем</label>
+
+                    <h3>Выберите оформляющий материал</h3>
+                    <input id="cont6" type="checkbox"class="cake" cost="240">
+                    <label>Мастика</label>
+
+                    <input id="cont7" type="checkbox"class="cake" cost="350">
+                    <label>Шоколад</label>
+
+                    <input id="cont9" type="checkbox"class="cake" cost="280">
+                    <label>Глазурь</label>
+
+                    <input id="cont10" type="checkbox"class="cake" cost="190">
+                    <label>Помадка</label>
+
+                    <input id="cont11" type="checkbox"class="cake" cost="420">
+                    <label>Мороженое</label>      
+
+
+<h3>Нарисуйте оформление торта</h3>
+<canvas id="canv" width="580" height="360"></canvas>
+<input type="color" id="color">
+
+
+<h3>Итоговая стоимость торта: <span id="totalcost"></span></h3>
+<button id="result">Счет</button>
+
+<h3>Торты в наличии</h3>
+<img src="Images/cake1.jpg" width="400" height="250">
+<input id="cont12" type="checkbox">
+<label> Нежность. Стоимость: 1300</label>
+
+<img src="Images/cake2.jpg" width="400" height="250">
+<input id="cont13" type="checkbox">
+<label> Фантазия. Стоимость: 2400</label>
+
+
+<h3>Выберите тип доставки</h3>
+<input type="radio" name="deliver">Самовывоз
+<input type="radio" name="deliver">Доставка
+
+<p><input type="yourname" placeholder="Ваше имя"></p>
+<p><input type="telephone" placeholder="Ваш телефон"></p>
+<p><input type="adress" placeholder="Ваш адрес"></p>
+<input type="submit" value="Отправить">
+</body>
+</html>
+
+   
+                 
