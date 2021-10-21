@@ -1,0 +1,173 @@
+body {
+
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+section {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    background: radial-gradient(white, #F07B3D);
+}
+
+.mass{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+}
+
+.mass div 
+{
+	position: absolute;
+	display: block;
+}
+
+
+.mass div:nth-child(1)
+{
+	left: 50%;
+animation: fly 20s linear infinite;
+}
+
+.mass div:nth-child(2)
+{
+	left: 20%;
+
+animation: fly 10s linear infinite;
+}
+
+.mass div:nth-child(3)
+{
+	left: 0%;
+
+animation: fly 23s linear infinite;
+}
+
+
+.mass div:nth-child(4)
+{
+	left: 70%;
+animation: fly 11s linear infinite;
+}
+.mass div:nth-child(5)
+{
+	left: 35%;	
+
+animation: fly 17s linear infinite;
+}
+.mass div:nth-child(6)
+{
+	left: 85%;
+
+animation: fly 25s linear infinite;
+}
+.mass div:nth-child(7)
+{
+	left: 15%;
+
+animation: fly 13s linear infinite;
+}
+.mass div:nth-child(8)
+{
+	left: 25%;
+
+animation: fly 16s linear infinite;
+}
+
+@keyframes fly
+{
+	0%{ 
+		opacity: 0;
+				top:-10%;
+		transform: translate(20px) rotate(0deg);	
+	}
+	10%{ 
+		opacity: 1;	
+	}
+
+	20%{ 
+		transform: translate(-25px) rotate(45deg);	
+	}
+	40%{ 
+		transform: translate(-25px) rotate(90deg);	
+	}
+	60%{ 
+		transform: translate(20px) rotate(140deg);	
+	}
+	80%{ 
+		transform: translate(-25px) rotate(180deg);	
+	}
+	100% {
+		top: 120%;
+		transform: translate(-25px) rotate(250deg);	
+	}
+}
+
+.mass2
+{
+	transform: scale(2);
+	filter:blur(1px);
+}
+
+.mass3
+{
+	transform: scale(0.8) rotateY(180deg);
+	filter:blur(2.5px);
+
+}
+
+/*h2
+{
+	position: absolute;
+	top:40%;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	font-size: 12em;
+	font-family: Calibri;
+	font-style: italic;
+	padding: 0;
+}*/
+/*.text h2 {
+	font-size: 12em;
+	font-family: Calibri;
+	font-style: italic;
+    color:rgba(255,255,255,.1);
+	background-image: url(abstract.jpg);
+	background-repeat: repeat-x;
+	-webkit-background-clip:text;
+	animation: animate 15s linear infinite;
+}*/
+.text h2 {
+	font-size: 12em;
+	font-family: Calibri;
+	font-style: italic;
+    color:rgba(255,255,255,.1);
+	background-image: url(abstract.jpg);
+	-webkit-background-clip:text;
+	background-repeat: repeat-x;
+	animation: animate 15s linear infinite;
+}
+
+.text{
+		position: absolute;
+		top:20%;
+	    width: 100%;
+		text-align: center;
+	    margin: 0;
+		padding: 0;
+
+}
+@keyframes animate{
+	0%{
+		background-position: left 0px top 10px;
+	}
+	40%{
+		background-position: left 800px top 10px;
+	}
+
+}
+
