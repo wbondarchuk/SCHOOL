@@ -1,0 +1,3 @@
+﻿  Source.cpp
+F:\С#\Cubes\Cubes\Source.cpp(111,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Cubes.vcxproj -> F:\С#\Cubes\Debug\Cubes.exe
