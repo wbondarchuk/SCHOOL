@@ -1,0 +1,6 @@
+﻿  Source.cpp
+F:\С#\TicTacToe\TicTacToe\TicTacToe\board.h(14,14): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+F:\С#\TicTacToe\TicTacToe\TicTacToe\board.h(14,16): warning C4838: Преобразование из "int" в "SHORT" требует сужающего преобразования.
+F:\С#\TicTacToe\TicTacToe\TicTacToe\board.h(135,12): warning C4101: key: неиспользованная локальная переменная
+F:\С#\TicTacToe\TicTacToe\TicTacToe\Source.cpp(24,11): warning C4101: key: неиспользованная локальная переменная
+  TicTacToe.vcxproj -> F:\С#\TicTacToe\TicTacToe\Debug\TicTacToe.exe
