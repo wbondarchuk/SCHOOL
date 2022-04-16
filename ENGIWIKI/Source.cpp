@@ -74,11 +74,11 @@ int main()
 void ShowMenu()
 {
 	gotoXY(40, 10);
-	cout << "Èãðàòü âäâîåì";
+	cout << "ÃˆÃ£Ã°Ã Ã²Ã¼ Ã¢Ã¤Ã¢Ã®Ã¥Ã¬";
 	gotoXY(40, 12);
-	cout << "Èãðàòü ñ êîìïüþòåðîì";
+	cout << "ÃˆÃ£Ã°Ã Ã²Ã¼ Ã± ÃªÃ®Ã¬Ã¯Ã¼Ã¾Ã²Ã¥Ã°Ã®Ã¬";
 	gotoXY(40, 14);
-	cout << "Êîíåö èãðû";
+	cout << "ÃŠÃ®Ã­Ã¥Ã¶ Ã¨Ã£Ã°Ã»";
 }
 void draw_pointer(int coord)
 {
@@ -95,48 +95,11 @@ void end_game(board b)
 	gotoXY(53, 12);
 	if (b.win() == 1)
 	{
-		cout << "Èãðîê X âûèãðàë!";
+		cout << "ÃˆÃ£Ã°Ã®Ãª X Ã¢Ã»Ã¨Ã£Ã°Ã Ã«!";
 	}
-	else cout << "Èãðîê 0 âûèãðàë!";
+	else cout << "ÃˆÃ£Ã°Ã®Ãª 0 Ã¢Ã»Ã¨Ã£Ã°Ã Ã«!";
 }
 
-void gamecomputer()
-{
-	system("cls");
-	cout << "Âûáåðåòå, êåì âû áóäåòå èãðàòü: 0 èëè Õ: ";
-	char key = _getch();
-
-	if (key == 'x') key = 'X';
-	else key = '0';
-	char ai_char;
-	if (key == 'X') ai_char = '0';
-	else ai_char = 'X';
-	board ai_board;
-	ai_board.init();
-	while (true)
-	{
-		if (ai_board.board_is_full())
-			ai_board.init();
-		if (!ai_board.win())
-			ai_board.input(key);
-		else break;
-		if (!ai_board.win())
-		{
-			if (ai_board.is_empty_position(1, 1)) ai_board.setChar(1, 1, ai_char);
-			else if (ai_board.is_empty_position(0, 0)) ai_board.setChar(0, 0, ai_char);
-			else if (ai_board.is_empty_position(2, 2)) ai_board.setChar(2, 2, ai_char);
-			else if (ai_board.is_empty_position(0, 2)) ai_board.setChar(0, 2, ai_char);
-			else if (ai_board.is_empty_position(2, 0)) ai_board.setChar(2, 0, ai_char);
-			else if (ai_board.is_empty_position(1, 0)) ai_board.setChar(1, 0, ai_char);
-			else if (ai_board.is_empty_position(1, 2)) ai_board.setChar(1, 2, ai_char);
-			else if (ai_board.is_empty_position(0, 1)) ai_board.setChar(0, 1, ai_char);
-			else if (ai_board.is_empty_position(2, 0)) ai_board.setChar(2, 0, ai_char);
-		}
-		else break;
-	}
-	end_game(ai_board);
-	_getch();
-}
 void gameplayer()
 {
 	board Board;
